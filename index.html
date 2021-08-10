@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
@@ -84,12 +85,11 @@
                 <div class="column left">
                     <div class="text">Classes</div>
                     <p>
-                        <a href="https://www.nd.edu/" target="_blank">Systems Programming</a>
-                        <a href="https://www.nd.edu/">Data Structures</a><br>
-                        <a href="https://www.nd.edu/">Logic Design</a>
-                        <a href="https://www.nd.edu/">Discrete Mathematics</a><br>
-                        <a href="https://www.nd.edu/">Fundamentals of Computing</a>
-                        <a href="https://www.nd.edu/">Engineering Physics</a>
+                        <a href="https://www3.nd.edu/~pbui/teaching/cse.20289.sp17/" target="_blank">Systems Programming</a>
+                        <a href="https://sites.google.com/a/nd.edu/morrison/links-for-students/archive/sp21-cse20312" target="_blank">Data Structures</a><br>
+                        <a href="https://www.nd.edu/" target="_blank">Logic Design</a>
+                        <a href="https://www.nd.edu/" target="_blank">Discrete Mathematics</a><br>
+                        <a href="https://www.coursicle.com/nd/courses/CSE/20311/" target="_blank">Fundamentals of Computing</a>
                     </p>
                 </div>
                 <div class="column right">
@@ -123,12 +123,62 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>MySQL</span>
+                            <span>SQL</span>
                             <span>75%</span>
                         </div>
                         <div class="line sql"></div>
                     </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C,C++ & C#</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line cs"></div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- testimonial section start -->
+    <section class="testimonials" id="testimonial">
+        <div class="max-width">
+            <h2 class="title">Testimonials()</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/mitchell.jpeg" alt="">
+                        <div class="text">Mitchell Kokko</div>
+                        <p>"Vaibhav was a pleasure to coach when he was a part of the Race2Revenue program at the IDEA Center.
+                        He is a talented, meticulous worker with a keen desire to tackle new and challenging projects.
+                        His enthusiasm was enjoyable to interact with, but the thing that stands out the most about V..."
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/abhinav.jpeg" alt="">
+                        <div class="text">Abhinav Dubey</div>
+                        <p>"I have mentored Vaibhav when he was doing his internship at Aegon Life.
+                        I see Vaibhav as a person having more inclination towards tech domain but the interest he showed towards learning new digital marketing concepts is commendable.
+                        I think he is a perfect mix of someone who can build somet..."
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/suchintya.jpeg" alt="">
+                        <div class="text">Suchintya Majumder</div>
+                        <p>"Vaibhav impressed me with his ability to be articulate about difficult concepts and texts, 
+                            his sensitivity to the nuances within literature, 
+                            and his passion for reading, writing, and creative expression - 
+                            both in and out of the classroom. Not only did he produce erudite projects based upon his analysis of ..."
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -173,7 +223,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="mailto:vaibhavarora2411@gmail.com">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
@@ -189,7 +239,10 @@
                             <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
+                            <script src="email.js"></script>
+                            <input type="button" value="Send Message" 
+                                onclick="sendEmail()" />
+                            <button type="submit" onclick="sendEmail()">Send message</button>
                         </div>
                     </form>
                 </div>
