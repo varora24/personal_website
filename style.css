@@ -323,7 +323,7 @@ section .title::after{
 /* Testimonials section styling */
 .testimonials{
     color:#fff;
-    background: #111;
+    background: #0C2340;
 }
 
 .testimonials .title::before{
@@ -331,13 +331,13 @@ section .title::after{
 }
 
 .testimonials .title::after{
-    background: black;
+    background: #0C2340;
     color: white;
     content: " { Hear from Others } ";
 }
 
 .testimonials .carousel .card{
-    background: #222;
+    background: #C99700;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -345,7 +345,8 @@ section .title::after{
     /*transition: all 0.3s ease;*/
 }
 .testimonials .carousel .card:hover{
-    background: crimson;
+    background: #C99700;
+    color: #0C2340;
 }
 .testimonials .carousel .card .box{
     display: flex;
@@ -360,18 +361,23 @@ section .title::after{
 .testimonials .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
+    color: white;
     margin: 10px 0 7px 0;
+}
+
+.testimonials .carousel .card:hover .text{
+    color: #0C2340;
 }
 .testimonials .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid white;
     transition: all 0.3s ease;
 }
 .testimonials .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #0C2340;
 }
 .owl-dots{
     text-align: center;
@@ -383,7 +389,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #C99700!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -392,7 +398,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background:#C99700!important;
 }
 
 
