@@ -11,6 +11,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    text-align: left;
+}
 section{
     padding: 100px 0;
 }
@@ -341,8 +344,9 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
+    display: flex;
     overflow: hidden;
-    /*transition: all 0.3s ease;*/
+    transition: all 0.3s ease;
 }
 .testimonials .carousel .card:hover{
     background: #C99700;
@@ -369,8 +373,8 @@ section .title::after{
     color: #0C2340;
 }
 .testimonials .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 50%;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid white;
@@ -399,6 +403,19 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background:#C99700!important;
+}
+
+.testimonials .card a{
+    display: inline-block;
+    background: #0C2340;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #C99700;
+    transition: all 0.3s ease;
 }
 
 
