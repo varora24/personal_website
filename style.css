@@ -22,11 +22,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .testimonials, .contact, footer{
+.about, .projects, .skills, .testimonials, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .project-content,
+.projects .project-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -88,7 +88,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: #C99700;/*crimson;*/
+    color: #C99700;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -243,6 +243,97 @@ section .title::after{
     color: #0C2340;
 }
 
+/* Projects section styling */
+.projects{
+    color:#fff;
+    background: #0C2340;
+}
+.projects .title::before{
+    background: #0C2340;
+}
+.projects .title::after{
+    background: #0C2340;
+    color: white;
+    content: " { My best works } ";
+}
+
+.projects * {
+    box-sizing: border-box;
+  }
+  
+  .projects body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .projects .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .projects h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .projects .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .projects .row,
+  .projects .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .projects .column {
+    float: left;
+    width: 33.333%;
+  }
+  
+  /* Clear floats after rows */
+  .projects .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .projects .content {
+    background-color: #C99700;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .projects .row .column a{
+    display: inline-block;
+    background: #0C2340;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #C99700;
+    transition: all 0.3s ease;
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .projects .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .projects .column {
+      width: 100%;
+    }
+  }
 
 /* skills section styling */
 .skills .title::after{
@@ -319,9 +410,6 @@ section .title::after{
 .skills-content .right .cs::before{
     width: 85%;
 }
-
-/* Projects Section Styling */
-/* COming Soon */
 
 /* Testimonials section styling */
 .testimonials{
