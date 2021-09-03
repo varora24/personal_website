@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: [" a Student at the University of Notre Dame"," interested in Full Stack Development"],
+        strings: [" a Student","in my Junior Year","at the University of Notre Dame"," interested in Full Stack Development"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["a Student ", "studying at Notre Dame", "looking for a Full Stack Developer Internship"],
+        strings: ["a Student ","in my Junior Year","studying at Notre Dame"," interested in Full Stack Development"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
